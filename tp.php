@@ -67,8 +67,8 @@ function i2c($indice = 1, $nbLettreMin = 5, $nbLettreMax = 8){
 }
 
 echo c2i($string);
-echo('<br/>')
-echo i2c(14);
+echo('<br/>');
+echo i2c(936);
 
 
 //Fonction de hashage
