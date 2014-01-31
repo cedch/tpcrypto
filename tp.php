@@ -3,7 +3,6 @@
 $string = "aaa0a";
 //$stringToDecode = md5("connard");
 
-
 //Attaque par compromis temps-memoire
 
 //Espace des textes clairs
