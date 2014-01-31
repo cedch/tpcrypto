@@ -58,4 +58,11 @@ echo c2i($string);
 echo i2c(1);
 
 
+//Fonction de hashage
+
+//Dictionnaire intégrale
+
+
+
+
 ?>
