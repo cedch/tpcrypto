@@ -3,7 +3,6 @@
 $string = "aaa0a";
 //$stringToDecode = md5("connard");
 
-
 //Attaque par compromis temps-memoire
 
 //Espace des textes clairs
@@ -70,6 +69,13 @@ function i2c($indice = 1, $nbLettreMin = 5, $nbLettreMax = 8){
 echo c2i($string);
 echo('<br/>')
 echo i2c(14);
+
+
+//Fonction de hashage
+
+//Dictionnaire intégrale
+
+
 
 
 ?>
