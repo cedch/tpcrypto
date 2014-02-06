@@ -66,6 +66,17 @@ function i2c($indice = 1, $nbLettreMin = 5, $nbLettreMax = 8){
 
 }
 
+function h($chaineACrypter, $algoCryptage) {
+    switch($algoCryptage) {
+        case "md5":
+            return md5($chaineACrypter);
+            break;
+        case "sha":
+            return sha1($chaineACrypter);
+            break;
+    }
+}
+
 echo c2i($string);
 echo('<br/>');
 echo i2c(936);
