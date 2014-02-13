@@ -77,9 +77,23 @@ function h($chaineACrypter, $algoCryptage) {
     }
 }
 
+function h2i($y, $t) {
+    //y sur 16 octets (32 caracteres hexa)
+    $N = pow(36, 5) + pow(36, 6) + pow(36, 7) + pow(36, 8); //Nombre de clairs possibles
+   // $y = hexdec($y);
+    $byte_array = unpack(hex2bin($y));
+    var_dump(strval(hexdec($y[0].$y[1].$y[2].$y[3].$y[4].$y[5].$y[6].$y[7].$y[8].$y[9].$y[10].$y[11].$y[12].$y[13].$y[14].$y[15])));die();
+    foreach($byte_array as $octet) {
+
+    }
+    return (($y + $t) % N);
+}
+
+echo h2i(h("qsdkjsqkd", "md5"), 2);
+echo('<br/>');
 echo c2i($string);
 echo('<br/>');
-echo i2c(936);
+echo i2c(749467555);
 
 
 //Fonction de hashage
